@@ -1,0 +1,228 @@
+:root {
+   
+    font-size: 62.5%;
+    
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 5.4rem;
+    color: white;
+    margin-bottom: 5rem;
+  }
+  
+  h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  
+  
+  
+  .container {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top:35%;
+    left:35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 2%;;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom:5%;
+    
+    background-color:black;
+  }
+  
+  .container > * {
+    width: 100%;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  .btn {
+    font-size: 200%;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid green;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: darkgreen;
+    background-color: rgb(213, 248, 162);
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  }
+  
+  input::placeholder {
+    color: black;
+  }
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url("home.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar{
+    width: 100%;
+    height: 0;
+    margin: 10px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;}
+    .logo{
+      position: absolute;
+      height: 20%;
+      width:15%;
+      
+      border: none;
+  
+      
+      
+      
+    
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px ;
+    position: relative;
+    size: 20%;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color:rgba(240, 255, 255, 0.925);
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+  
+  }
+ 
+  
+  
+  #username{
+    color: black;
+  }
+  .A{
+    background-color: black;
+    width: 100%;
+  }
+  p{
+    font-size: 35px;
+    padding: 15px;
+  }
+  body {
+    background-image: url("Avengers.gif");
+    display: block;
+  }
+  .iornman{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top:35%;
+    left:35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 2%;;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom:5%;
+  }
