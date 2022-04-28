@@ -1,0 +1,54 @@
+
+  
+  .navbar{
+    width: 100%;
+    height: 0;
+    margin: 10px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;}
+    .logo{
+      position: absolute;
+      height: 20%;
+      width:15%;
+      
+      border: none;
+  
+      
+      
+      
+    
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px ;
+    position: relative;
+    size: 20%;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color:rgba(240, 255, 255, 0.925);
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+  
+  }
+ 
+  
+  
+  
