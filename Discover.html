@@ -8,33 +8,54 @@
     
     <link rel="stylesheet" href="about.css" />
     <style>
-        div.gallery {
-          margin: 5px;
-          border: 1px solid #ccc;
-          float: left;
-          width: 30%;
-          background-color: black;
-          
-        }
-        
-        div.gallery:hover {
-          border: 1px solid #777;
-        }
-        
-        div.gallery img {
-          width: 100%;
-          
-        }
-        
-        div.desc {
-          padding: 15px;
-          text-align: center;
-          color: aliceblue;
-         font-size: 30px;
-        }
-        body{
-          background-color: black;
-        }
+     /* Common styles for both mobile and desktop */
+body {
+    background-color: black;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 30%;
+    background-color: black;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    div.gallery {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    div.desc {
+        font-size: 16px;
+    }
+}
+
+/* Desktop responsiveness */
+@media (min-width: 769px) {
+    div.gallery {
+        width: 30%;
+    }
+}
+
         </style>
   </head>
   <body>

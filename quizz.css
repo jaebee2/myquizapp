@@ -1,0 +1,86 @@
+/* Common styles for both mobile and desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        height: 70px; /* Increase height for better touch target */
+    }
+
+    .navbar ul li {
+        margin-right: 10px; /* Decrease margin for smaller screens */
+    }
+
+    .quiz_box header .timer_sec {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        height: 24px; /* Adjust height for smaller screens */
+        width: 35px; /* Adjust width for smaller screens */
+        line-height: 24px; /* Adjust line-height for smaller screens */
+    }
+
+    .result_box .score_text {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .buttons button {
+        font-size: 14px; /* Decrease font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Desktop responsiveness */
+@media (min-width: 769px) {
+    .navbar {
+        height: 50px; /* Reset height for larger screens */
+    }
+
+    .navbar ul li {
+        margin-right: 20px; /* Reset margin for larger screens */
+    }
+
+    .quiz_box header .timer_sec {
+        font-size: 18px; /* Reset font size for larger screens */
+        height: 30px; /* Reset height for larger screens */
+        width: 45px; /* Reset width for larger screens */
+        line-height: 30px; /* Reset line-height for larger screens */
+    }
+
+    .result_box .score_text {
+        font-size: 18px; /* Reset font size for larger screens */
+    }
+
+    .buttons button {
+        font-size: 16px; /* Reset font size for larger screens */
+        padding: 10px 20px; /* Reset padding for larger screens */
+    }
+}

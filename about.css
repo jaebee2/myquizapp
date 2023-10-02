@@ -1,54 +1,87 @@
 
-  
-  .navbar{
-    width: 100%;
-    height: 0;
-    margin: 10px;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;}
-    .logo{
-      position: absolute;
-      height: 20%;
-      width:15%;
-      
-      border: none;
-  
-      
-      
-      
-    
+.navbar {
+  width: 100%;
+  height: 70px; 
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: relative;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+  border: none;
+  position: absolute;
+  left: 10px;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgba(240, 255, 255, 0.925);
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+      height: 50px; 
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
   }
-  .navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin:0 20px ;
-    position: relative;
-    size: 20%;
+
+  .logo {
+      position: relative;
+      left: 0;
+      margin-bottom: 10px;
   }
-  .navbar ul li a{
-    text-decoration: none;
-    color:rgba(240, 255, 255, 0.925);
-    text-transform: uppercase;
+
+  .navbar ul li {
+      margin: 0;
+      padding: 10px 0;
   }
-  .navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-    
+}
+
+
+@media (min-width: 769px) {
+  .navbar {
+      height: 70px; 
+      padding: 0;
   }
-  .navbar ul li:hover::after{
-    width: 100%;
-  
+
+  .navbar ul li {
+      margin: 0 20px;
+      padding: 0;
   }
- 
-  
-  
-  
+}

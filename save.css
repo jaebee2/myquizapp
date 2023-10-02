@@ -1,0 +1,54 @@
+/* Common styles for both mobile and desktop */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Avengers.gif");
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Desktop responsiveness */
+@media (min-width: 769px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,104 @@
+/* Common styles for both mobile and desktop */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        height: 70px; /* Increase height for better touch target */
+    }
+
+    .navbar ul li {
+        margin-right: 10px; /* Decrease margin for smaller screens */
+    }
+
+    #home h1 {
+        font-size: 2rem; /* Decrease font size for smaller screens */
+    }
+
+    .btn {
+        font-size: 1.2rem; /* Decrease font size for smaller screens */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Desktop responsiveness (if needed) */
+@media (min-width: 769px) {
+    .navbar {
+        height: 50px; /* Reset height for larger screens */
+    }
+
+    .navbar ul li {
+        margin-right: 20px; /* Reset margin for larger screens */
+    }
+
+    #home h1 {
+        font-size: 3rem; /* Reset font size for larger screens */
+    }
+
+    .btn {
+        font-size: 1.5rem; /* Reset font size for larger screens */
+        padding: 15px 30px; /* Reset padding for larger screens */
+    }
+}
